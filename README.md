@@ -8,7 +8,9 @@ pip install pyqt5
 
 Kullanımı
 git clone https://github.com/atalhatabak/PyTranslator.git
+
 cd PyTranslator
+
 python main.py
 
 Özellikler
