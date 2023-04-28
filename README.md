@@ -19,9 +19,11 @@ python main.py
 
 Özellikler
 - Açıldığında otomatik panodaki içeriği alır ve sistem diline çevirir
+- Yazıldığında otomatik çeviri yapar
 - ESC veya Ctrl+Q kısayolları ile kapatılabilir
 - Ctrl+F kısayolu ile giriş metin alanına odaklar
 - Ctrl+C ile dilleri ve metinleri değiştirir
 - Ctrl+A ile giriş dilini otomatik algıla yapar
 
 Kullanılan işletim sistemi için başlatma kısayolu ayarlanırsa kullanılması daha pratik olacaktır
+
