@@ -27,3 +27,4 @@ python main.py
 
 Kullanılan işletim sistemi için başlatma kısayolu ayarlanırsa kullanılması daha pratik olacaktır
 
+![Screenshot_20230428_124844](https://user-images.githubusercontent.com/56918326/235115781-691cec11-304b-4118-857b-f954bec24f33.png)
