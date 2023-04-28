@@ -7,7 +7,8 @@ pip install googletrans==3.1.0a0
 pip install pyqt5
 
 Kullanımı
-https://github.com/atalhatabak/PyTranslator.git
+git clone https://github.com/atalhatabak/PyTranslator.git
+cd PyTranslator
 python main.py
 
 Özellikler
