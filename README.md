@@ -1,12 +1,16 @@
 # PyTranslator
 Google translate GUI application made with Python and Qt
 
-Bağımlılıklar
+Bağımlılıklar:
+
 python
+
 pip install googletrans==3.1.0a0
+
 pip install pyqt5
 
-Kullanımı
+Kullanımı:
+
 git clone https://github.com/atalhatabak/PyTranslator.git
 
 cd PyTranslator
