@@ -52,6 +52,8 @@ class PyTranslator(QWidget):
         shortcut3.activated.connect(self.changeLangs)
         shortcut4 = QShortcut(QKeySequence("Alt+F"), self)
         shortcut4.activated.connect(self.focus_input)
+        shortcut4 = QShortcut(QKeySequence("Alt+A"), self)
+        shortcut4.activated.connect(self.set_auto)
 
        
 
@@ -85,7 +87,7 @@ class PyTranslator(QWidget):
         # Menü widgetını ayarla
         self.menu1 = QMenu()
 
-        action = QAction("Auto", self)
+        action = QAction("auto", self)
         action.triggered.connect(lambda checked, text=action.text(): self.button1.setText(text))
         self.menu1.addAction(action)
         for value in googletrans.LANGUAGES.values():
@@ -177,17 +179,17 @@ class PyTranslator(QWidget):
             else:
                 self.button2.setText(tmpdata)
                
-
+            
             inputtextTmp = self.input_text.toPlainText() # input alanındaki yazı geçici bir değişkene atanıyor
             self.input_text.setText(self.output_text.toPlainText()) # input alanına output alanındaki veri yazılıyor
             self.output_text.setText(inputtextTmp) # output alanına değişkene atadığımız input değişkeni yazılıyor
-        elif self.button1.text() == "auto" and len(self.input_text.toPlainText()) == 0:
+        elif self.button1.text() == "auto" :
             self.logrecord.setText("Source Lang is Auto")
-            self.hide()
         else :
             tmpdata=self.button1.text()
             self.button1.setText(self.button2.text())
             self.button2.setText(tmpdata)
+            self.button1.text()
             
 
     def close_window(self):
@@ -195,8 +197,9 @@ class PyTranslator(QWidget):
 
     def focus_input(self):
         self.input_text.setFocus()
-    
-
+    def set_auto(self):
+        self.button1.setText("auto")
+        self.start_translator()
 
 
 if __name__ == '__main__':
