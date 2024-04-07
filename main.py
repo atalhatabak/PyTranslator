@@ -1,3 +1,4 @@
+#git
 import sys, googletrans
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QTextEdit, QPushButton, QMenu, QAction, QMainWindow, QShortcut, QDesktopWidget
 from googletrans import Translator #pip install googletrans==3.1.0a0
