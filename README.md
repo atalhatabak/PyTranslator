@@ -1,3 +1,7 @@
+```
+Not: Google translate Api'sini kullanan googletrans kütüphanesi çalışmadığından googletrans kütüphanesini kullanan bu uygulamada çalışmayacaktır
+```
+
 # PyTranslator
 Google translate GUI application made with Python and Qt
 
